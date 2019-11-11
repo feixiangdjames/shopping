@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -10,8 +9,8 @@ export default {
   name: 'App'
 }
 </script>
-
 <style>
+  @import "assets/iconfont/iconfont.css";
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,4 +19,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.van-tabbar-item--active{color:orange;}
 </style>
