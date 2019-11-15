@@ -11,9 +11,8 @@ Vue.use(Vant);*/
 Vue.use(Tabbar).use(TabbarItem).use(Icon);
 Vue.config.productionTip = false;
 /* eslint-disable no-new */
-
-import {Icon,Tabbar,TabbarItem} from 'vant';
-Vue.use(Icon).use(Tabbar).use(TabbarItem);
+import {Icon,Tabbar,TabbarItem,Lazyload,Search} from 'vant';
+Vue.use(Icon).use(Tabbar).use(TabbarItem).use(Lazyload).use(Search);
 Vue.config.productionTip = false;
 new Vue({
   el: '#app',
@@ -21,3 +20,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 });
+let winW=document.documentElement.clientWidth||document.body.clientWidth;
+document.documentElement.style.fontSize=winW/640*100+"px";
